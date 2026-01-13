@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -20,25 +21,21 @@
     </nav>
     <main>
         <div id="klawiatura">
-            <button>+</button>
-            <button>-</button>
-            <button>=</button>
-            <button>pi</button>
-            <button>*</button>
-            <button>/</button>
-            <button>x2</button>
-            <button>li</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
-            <button class="zatwierdzacz">Zatwierdź</button>
+            <button onclick="add('+')">+</button>
+            <button onclick="add('-')">-</button>
+            <button onclick="add('*')">*</button>
+            <button onclick="add('/')">/</button>
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')">3</button>
+            <button onclick="add('4')">4</button>
+            <button onclick="add('5')">5</button>
+            <button onclick="add('6')">6</button>
+            <button onclick="add('7')">7</button>
+            <button onclick="add('8')">8</button>
+            <button onclick="add('9')">9</button>
+            <button onclick="add('0')">0</button>
+            <button onclick="licz()" class="zatwierdzacz">Zatwierdź</button>
         </div>
         <div id="wyswietlacze">
             <div id="wyswietlacz_glowny"></div>
@@ -80,5 +77,6 @@
         </div>
 
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
