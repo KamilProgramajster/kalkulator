@@ -35,20 +35,22 @@
             <button onclick="add('8')">8</button>
             <button onclick="add('9')">9</button>
             <button onclick="add('0')">0</button>
-            <button onclick="licz()" class="zatwierdzacz">Zatwierdź</button>
+            <button onclick="czysty()">C</button>
+            <button onclick="licz()">=</button>
+            <button onclick="zatwierdzacz()" class="zatwierdzacz">Zatwierdź</button>
         </div>
         <div id="wyswietlacze">
             <div id="wyswietlacz_glowny"></div>
             <div id="wyswietlacz_polecen"></div>
             <div id="historia">
-                <div id="historia_wynikow"></div>
-                <div id="historia_dzialan"></div>
+                <div id="historia_wynikow">Twoje wyniki</br></div>
+                <div id="historia_dzialan">Twoje działania</br></div>
             </div>
         </div>
         <div id="zarzadzanie_pamiecia">
             <div class="guziki_zarzadzanie">Przywróć wynik</div>
             <div class="guziki_zarzadzanie">Przywróć działanie</div>
-            <div class="guziki_zarzadzanie">Reset modelu kalkulatora</div>
+            <div class="guziki_zarzadzanie" onclick="reset()">Reset modelu kalkulatora</div>
             <div class="guziki_zarzadzanie">Przelicz jednostki</div>
             <div class="guziki_zarzadzanie">English version</div>
             <div class="guziki_zarzadzanie"><img src="logo.png"></div>
@@ -72,7 +74,7 @@
             <div id="na_jaka"></div>
         </div>
         <div id="konsola_programisty">
-            <h3>Konsola programisty</h3>
+            <h3>Konsola zdarzeń</h3>
             <div id="logi_systemu"></div>
         </div>
 
