@@ -110,7 +110,8 @@ main > div:hover { transform: translateY(-5px); }
 }
 
 #wyswietlacz_polecen { min-height: 30px; font-style: italic; color: #666; }
-#historia { border-top: 1px solid #eee; padding-top: 10px; font-size: 0.9rem; }
+#historia { border-top: 1px solid #eee; padding-top: 10px; font-size: 0.9rem; display:flex; }
+#historia_dzialan{margin-left:3rem}
 
 .guziki_zarzadzanie, #tryby_matematyczne div {
     padding: 12px;
