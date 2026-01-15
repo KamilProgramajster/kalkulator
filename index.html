@@ -21,22 +21,22 @@
     </nav>
     <main>
         <div id="klawiatura">
-            <button onclick="add('+')">+</button>
-            <button onclick="add('-')">-</button>
-            <button onclick="add('*')">*</button>
-            <button onclick="add('/')">/</button>
-            <button onclick="add('1')">1</button>
-            <button onclick="add('2')">2</button>
-            <button onclick="add('3')">3</button>
-            <button onclick="add('4')">4</button>
-            <button onclick="add('5')">5</button>
-            <button onclick="add('6')">6</button>
-            <button onclick="add('7')">7</button>
-            <button onclick="add('8')">8</button>
-            <button onclick="add('9')">9</button>
-            <button onclick="add('0')">0</button>
-            <button onclick="czysty()">C</button>
-            <button onclick="licz()">=</button>
+            <button id="plus" onclick="add('+')">+</button>
+            <button id="minus" onclick="add('-')">-</button>
+            <button id="mnoz" onclick="add('*')">*</button>
+            <button id="dziel" onclick="add('/')">/</button>
+            <button id="jeden" onclick="add('1')">1</button>
+            <button id="dwa" onclick="add('2')">2</button>
+            <button id="trzy" onclick="add('3')">3</button>
+            <button id="cztery" onclick="add('4')">4</button>
+            <button id="piec" onclick="add('5')">5</button>
+            <button id="szesc" onclick="add('6')">6</button>
+            <button id="siedem" onclick="add('7')">7</button>
+            <button id="osiem" onclick="add('8')">8</button>
+            <button id="dziewiec" onclick="add('9')">9</button>
+            <button id="zero" onclick="add('0')">0</button>
+            <button id="wyczysc" onclick="czysty()">C</button>
+            <button id="wynik" onclick="licz()">=</button>
             <button onclick="zatwierdzacz()" class="zatwierdzacz">Zatwierdź</button>
         </div>
         <div id="wyswietlacze">
@@ -51,7 +51,7 @@
             <div class="guziki_zarzadzanie" onclick="przywroc_wynik()">Przywróć wynik</div>
             <div class="guziki_zarzadzanie" onclick="przywroc_dzialanie()">Przywróć działanie</div>
             <div class="guziki_zarzadzanie" onclick="reset()">Reset modelu kalkulatora</div>
-            <div class="guziki_zarzadzanie">Przelicz jednostki</div>
+            <div class="guziki_zarzadzanie" onclick="przelicz_jednostki()">Przelicz jednostki</div>
             <div class="guziki_zarzadzanie">English version</div>
             <div class="guziki_zarzadzanie"><img src="logo.png"></div>
         </div>
